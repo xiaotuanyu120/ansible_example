@@ -1,0 +1,39 @@
+---
+##################
+# server config
+##################
+# server_type:
+# {
+#   nginx:
+#     yaml_file: "{{ service_conf.nginx.yaml_file }}" 
+#   webserver:
+#     ext: "{{ service_conf.webserver.ext }}"
+#     yaml_file: "{{ service_conf.webserver.yaml_file }}"
+#   webservice:
+#     ext: "{{ service_conf.webservice.ext }}"
+#     yaml_file: "{{ service_conf.webservice.yaml_file }}"
+#   middleservice:
+#     ext: "{{ service_conf.middleservice.ext }}"
+#     yaml_file: "{{ service_conf.middleservice.yaml_file }}"
+#   redis:
+#     yaml_file: "{{ service_conf.redis.yaml_file }}" 
+#   zookeeper:
+#     yaml_file: "{{ service_conf.zookeeper.yaml_file }}" 
+# }
+server_type:
+  redis:
+    yaml_file: "{{ service_conf.redis.yaml_file }}" 
+
+##################
+# jdk config
+##################
+# jdk version type:
+# {
+#   "{{ jdk6 }}"
+#   "{{ jdk7 }}"
+#   "{{ jdk8 }}"
+# }
+jdk_version:
+  - "{{ jdk6 }}"
+  - "{{ jdk7 }}"
+  - "{{ jdk8 }}"

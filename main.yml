@@ -1,0 +1,11 @@
+---
+- hosts: "{{ host }}"
+  gather_facts: no
+  remote_user: "{{ ansible_user }}"
+  become: yes
+  become_user: root
+  become_method: sudo
+  connection: paramiko
+
+  roles:
+    - "{{ role }}"

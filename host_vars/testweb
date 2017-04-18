@@ -1,0 +1,14 @@
+---
+################
+# brand
+################
+brand:
+    name: testBrand
+
+################
+# redis
+################
+# redis_pass default: pass123
+redis_pass: pass123
+# redis_port default: 6379
+redis_port: 6379
